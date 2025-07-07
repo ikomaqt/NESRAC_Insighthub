@@ -1,0 +1,22 @@
+[2024-08-13 16:28:20] Error: Client error: `POST https://api.paymongo.com/v1/webhooks` resulted in a `400 Bad Request` response:
+{"errors":[{"code":"resource_exists","detail":"Webhook with url https://yourdomain.com/webhook.php already exists.","sou (truncated...)
+
+[2024-08-13 16:29:41] Error: Client error: `POST https://api.paymongo.com/v1/webhooks` resulted in a `401 Unauthorized` response:
+{"errors":[{"code":"api_key_invalid","detail":"API key whsk_vp5sVy*****************3 is invalid. Go to https://developer (truncated...)
+
+[2024-08-13 16:29:56] Error: Client error: `POST https://api.paymongo.com/v1/webhooks` resulted in a `401 Unauthorized` response:
+{"errors":[{"code":"api_key_invalid","detail":"API key whsk_vp5sVy*****************3 is invalid. Go to https://developer (truncated...)
+
+[2024-08-13 16:30:24] Error: Client error: `POST https://api.paymongo.com/v1/webhooks` resulted in a `401 Unauthorized` response:
+{"errors":[{"code":"api_key_invalid","detail":"API key whsk_vp5sVy*****************3 is invalid. Go to https://developer (truncated...)
+
+[2024-08-13 16:30:38] Error: Client error: `POST https://api.paymongo.com/v1/webhooks` resulted in a `400 Bad Request` response:
+{"errors":[{"code":"resource_exists","detail":"Webhook with url https://yourdomain.com/webhook.php already exists.","sou (truncated...)
+
+[2024-08-13 16:33:20] Webhook already exists with ID: hook_dfHa4DP2EiLNDHYHUwA3dtqF
+[2024-08-18 13:29:27] Error checking webhooks: Client error: `GET https://api.paymongo.com/v1/webhooks` resulted in a `401 Unauthorized` response:
+{"errors":[{"code":"api_key_invalid","detail":"API key c2tfdGVzdF9*****************dDZkS01Rd2llN2E6 is invalid. Go to ht (truncated...)
+
+[2024-08-18 13:29:28] Error: Client error: `POST https://api.paymongo.com/v1/webhooks` resulted in a `401 Unauthorized` response:
+{"errors":[{"code":"api_key_invalid","detail":"API key c2tfdGVzdF9*****************dDZkS01Rd2llN2E6 is invalid. Go to ht (truncated...)
+

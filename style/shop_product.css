@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 35px;
+    color: #000;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px; /* Adjust for container padding */
+    margin-right: -10px; /* Adjust for container padding */
+}
+
+.col-md-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    box-sizing: border-box;
+}
+
+.product-card {
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 350px; /* Set the desired height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.product-name {
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.product-price {
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.product-quantity {
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.buy-now-button {
+    background-color: #ac1d1d;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.buy-now-button:hover {
+    background-color: #8b1a1a;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #007bff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+    background-color: #fff;
+    border: none; /* Remove any border around the table */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the table */
+}
+
+thead th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: left;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border: none; /* Remove border from header cells */
+}
+
+tbody td {
+    padding: 15px 20px;
+    font-weight: 300;
+    color: #666;
+    border: none; /* Remove border from body cells */
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 500;
+    color: #fff;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Accept Button */
+.accept-btn {
+    background-color: #28a745;
+}
+
+.accept-btn:hover {
+    background-color: #218838;
+}
+
+/* Reject Button */
+.reject-btn {
+    background-color: #dc3545;
+}
+
+.reject-btn:hover {
+    background-color: #c82333;
+}
+
+/* View Button */
+.view-info-btn {
+    background-color: #007bff;
+}
+
+.view-info-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Toggle Buttons */
+.toggle-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+}
+
+.toggle-buttons button.active {
+    background-color: #0056b3;
+}
+
+/* SweetAlert Modal */
+.swal-wide {
+    width: 30% !important;
+}
+
+/* Grid Layout for Products in SweetAlert */
+.product-grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.product-grid-item {
+    display: contents;
+}
+
+.product-grid-item label {
+    font-weight: bold;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.product-grid-item input {
+    width: 60%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+}
+
+/* Zoomable Image */
+.zoomable-image {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.zoomed {
+    transform: scale(2);
+    z-index: 1000;
+    position: relative;
+}
+
+/* Additional Styling */
+button:focus, .toggle-buttons button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}

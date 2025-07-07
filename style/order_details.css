@@ -1,0 +1,103 @@
+/* General card styling */
+.card {
+    border: 1px solid #cccccc; /* Light gray border */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Inner spacing */
+    margin: 20px auto; /* Centered with margin */
+    background-color: #f8f9fa; /* Light gray background */
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.1); /* Slightly deeper shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    max-width: 100%; /* Full width on smaller screens */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0px 12px 24px rgba(0,0,0,0.2); /* Enhanced shadow on hover */
+}
+
+/* Card heading */
+.card h3 {
+    margin-top: 0;
+    font-size: 1.75em; /* Larger font size for emphasis */
+    color: #007bff; /* Blue color for heading */
+    border-bottom: 2px solid #007bff; /* Underline with blue */
+    padding-bottom: 10px; /* Spacing below heading */
+    white-space: nowrap; /* Prevent heading from wrapping */
+}
+
+/* Card paragraph */
+.card p {
+    margin: 10px 0;
+    font-size: 1.1em; /* Slightly larger text */
+    color: #333; /* Dark gray for better readability */
+}
+
+/* Table styling within the card */
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    min-width: 600px; /* Ensure table does not become too narrow */
+}
+
+.card table th,
+.card table td {
+    padding: 12px; /* Increased padding for a more spacious look */
+    border: 1px solid #cccccc; /* Light gray border for table cells */
+    text-align: left;
+}
+
+.card table th {
+    background-color: #e9ecef; /* Light gray background for table headers */
+    font-weight: bold;
+    color: #007bff; /* Blue color for table headers */
+    text-transform: uppercase; /* Capitalize table headers */
+    letter-spacing: 0.05em; /* Slight spacing between letters */
+}
+
+.card table td {
+    color: #555; /* Dark gray for table text */
+}
+
+.card table tr:nth-child(even) {
+    background-color: #f1f3f5; /* Slightly different row color for contrast */
+}
+
+/* Total price styling */
+.card .total {
+    margin-top: 20px;
+    font-size: 1.3em; /* Larger font for emphasis */
+    font-weight: bold;
+    color: #007bff; /* Blue color for total price */
+    text-align: right; /* Align total price to the right */
+    border-top: 2px solid #007bff; /* Blue line above total price */
+    padding-top: 10px; /* Padding above total price */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .card {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .card table th, .card table td {
+        padding: 8px; /* Reduce padding in table cells */
+    }
+
+    .card .total {
+        font-size: 1.2em; /* Slightly reduce total price font size */
+    }
+}
+
+/* Highlighted row styling */
+.card table tr.highlighted {
+    background-color: #cce5ff; /* Light blue background for the highlighted row */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    box-shadow: inset 0 0 10px rgba(0, 123, 255, 0.3); /* Inner shadow for depth */
+}
+
+/* Maintain text color contrast for highlighted row */
+.card table tr.highlighted td {
+    color: #333; /* Darker text color for readability */
+}

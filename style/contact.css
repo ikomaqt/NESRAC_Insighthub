@@ -1,0 +1,201 @@
+/* Apply the background image to the body */
+body {
+    background: url('../img/section1.png') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire body */
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+}
+
+/* Adjusted Contact Section Styles */
+.contact-section {
+    padding: 40px 0;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background with 80% opacity */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header h2 {
+    font-size: 2.5rem;
+    color: #AC1D1D;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact-details p {
+    font-size: 1rem;
+    color: #34495E;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.contact-details a {
+    color: #AC1D1D;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+    font-size: 1rem;
+    color: #34495E;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #AC1D1D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #D22D2D;
+}
+
+/* Footer Styles (Smaller and White) */
+.footer {
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark text for contrast */
+    padding: 20px 0; /* Smaller padding */
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 15px;
+    flex: 1;
+}
+
+.footer-list-title {
+    font-size: 1.15rem; /* Slightly smaller font size */
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Dark text for titles */
+}
+
+.footer-list-text,
+.footer-link {
+    font-size: 0.9rem; /* Smaller font for text */
+    color: #666; /* Lighter gray for text */
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.footer-link:hover {
+    color: #AC1D1D; /* Primary color for hover */
+    text-decoration: underline;
+}
+
+.footer-list-text.bold {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Social Media Icons */
+.social-list {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    list-style: none;
+    margin: 10px 0 0;
+}
+
+.social-link {
+    color: #666;
+    font-size: 18px; /* Slightly smaller icons */
+    margin-right: 12px;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #AC1D1D; /* Primary color for hover on icons */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid #ddd; /* Lighter border color */
+    margin-top: 20px; /* Smaller margin */
+    padding-top: 15px; /* Reduced padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment-method {
+    max-width: 120px; /* Smaller payment method image */
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-list {
+        margin: 15px 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .payment-method {
+        margin-top: 20px;
+        max-width: 100px;
+    }
+
+    .contact-container {
+        padding: 15px;
+    }
+}

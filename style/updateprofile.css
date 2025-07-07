@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 5rem; /* Adds space from the top */
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.message {
+    margin-bottom: 1.5rem;
+    color: #d9534f;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #007bff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    margin-top: 0.5rem;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}

@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+.overlay-panel .logo {
+    width: 250px; /* Increase the width */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: -18%;
+}
+
+span {
+    font-size: 12px;
+}
+
+button {
+    border-radius: 25px;
+    border: 1px solid #fff;
+    background-color: #AC1D1D;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    width: 100%;
+    max-width: 180px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.ghost {
+   
+    border-color: #FFFFFF;
+}
+
+input, select {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+/* Styling for the "Forgot your password?" link */
+
+.password-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.password-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.show-password {
+    display: flex;
+    align-items: center; /* Ensures checkbox and text are aligned on the same line */
+    white-space: nowrap; /* Prevents wrapping */
+    font-size: 11px;
+}
+
+.show-password input {
+    margin-right: 5px; /* Space between checkbox and label text */
+}
+
+
+a#forgotPasswordBtn {
+    display: inline-block;
+    font-size: 12px;
+    color: #AC1D1D;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: auto;
+    margin-bottom: 0; 
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+a#forgotPasswordBtn:hover {
+    color: #7B1313;
+}
+
+/* For WebKit browsers like Chrome and Safari */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear,
+input[type="password"]::-webkit-outer-spin-button,
+input[type="password"]::-webkit-inner-spin-button {
+    display: none; /* Hide the eye icon */
+}
+
+/* Container for the password field and show password option */
+.password-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.password-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.show-password-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align the checkbox and text to the left */
+    margin-top: 10px;
+}
+
+.show-password {
+    display: flex;
+    align-items: center; /* Ensures checkbox and text are aligned on the same line */
+    white-space: nowrap; /* Prevents wrapping */
+    font-size: 13px; /* Adjust font size as needed */
+}
+
+.show-password input {
+    margin-right: 5px; /* Space between checkbox and label text */
+}
+
+
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto 0;
+}
+
+button.previous-btn {
+    margin-right: 10px;
+}
+
+.button-group button {
+    width: 48%;
+    padding: 15px 0;
+    font-size: 14px;
+    border-radius: 25px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 500px;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    overflow: auto;
+    max-height: 90vh;
+    transition: all 0.6s ease-in-out;
+}
+
+.form-step {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.form-step.active {
+    display: block;
+    position: relative;
+}
+
+.sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+}
+
+.sign-up-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
+}
+
+@keyframes show {
+    0%, 49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+
+.overlay {
+    background: #ff8d0a;
+    background: -webkit-linear-gradient(to right, #ff8d0a, #c22525);
+    background: linear-gradient(to right, #ff8d0a, #c22525);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    color: #FFFFFF;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+    transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+    transform: translateX(0);
+}
+
+.overlay-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+    transform: translateX(20%);
+}
+
+/* Step indicator styling */
+.step-indicator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Active line (new styling) */
+.step-indicator-line.active-line {
+    position: absolute;
+    top: 43%;
+    left: 15%;
+    height: 2px;
+    background-color: #AC1D1D;
+    z-index: 1; /* Ensure it's behind the circles but in front of the inactive line */
+    transition: width 0.6s ease-in-out;
+    width: 0%; /* Start at 0% width by default */
+}
+
+
+.step-indicator-item {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.step-indicator-item .circle {
+    background-color: #AC1D1D;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    z-index: 2;
+    position: relative;
+    margin-top: 13px;
+}
+
+.step-indicator-item.active .circle {
+    background-color: #AC1D1D;
+}
+
+.step-indicator-item.inactive .circle {
+    background-color: #eee;
+    color: #333;
+}
+
+.step-indicator-item .label {
+    margin-top: 10px;
+    font-size: 13px;
+    color: black;
+    position: relative;
+}
+
+.step-indicator-line {
+    position: absolute;
+    top: 43%;
+    left: 15%;
+    width: 70%;
+    height: 2px;
+    background-color: #ccc;
+    z-index: 1;
+}
+
+.step-indicator-item .circle {
+    z-index: 2;
+}
+
+/* Upload container styling */
+.upload-container {
+    border: 2px dashed #AC1D1D;
+    border-radius: 8px;
+    padding: 10px; /* Padding can be adjusted as needed */
+    text-align: center;
+    width: 100%;
+    max-width: 200px; /* Adjust the width as per your needs */
+    height: 150px; /* Set a fixed height for the upload box */
+    margin: 20px auto;
+    background-color: #F8E9E9;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-container.highlight {
+    background-color: #E0B4B4;
+}
+
+.upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.upload-icon {
+    font-size: 30px;
+    color: #AC1D1D;
+    margin-bottom: 20px;
+}
+
+.upload-btn:hover {
+    background-color: #7B1313;
+}
+
+.upload-text {
+    color: #AC1D1D;
+    font-size: 14px;
+}
+
+.upload-container input[type="file"] {
+    display: none;
+}
+
+.preview-container img {
+    max-width: 100px;
+    margin-top: 10px;
+}
+
+.preview-container p {
+    color: #AC1D1D;
+    font-weight: bold;
+}
+.upload-container {
+    border: 2px dashed #AC1D1D;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+    height: 150px;
+    margin: 20px auto;
+    background-color: #F8E9E9;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.upload-label img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.upload-icon {
+    font-size: 30px;
+    color: #AC1D1D;
+    margin-bottom: 20px;
+}
+
+.upload-text {
+    color: #AC1D1D;
+    font-size: 14px;
+}
+
+
+.preview-container img {
+    max-width: 100px;
+    margin-top: 10px;
+}
+
+/* New CSS for file upload overview */
+.upload-overview {
+    text-align: left;
+    padding: 10px;
+    background-color: #ddd;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upload-overview .overview-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.upload-overview i {
+    font-size: 20px;
+    color: black;
+}
+
+.upload-overview span {
+    font-size: 14px;
+    color: black;
+    margin-left: 10px;
+}
+
+.upload-overview .fa-check {
+    color: green;
+}
+
+.logo-image {
+    width: 10px; /* Adjust the size as needed */
+    height: auto;
+    object-fit: contain; /* Ensures the image fits well in its container */
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        min-height: 600px;
+    }
+
+    .overlay-container {
+        display: none;
+    }
+}

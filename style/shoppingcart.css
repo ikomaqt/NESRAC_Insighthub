@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+   
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    margin: 10px;
+}
+
+.column.shopping-cart {
+    flex: 2; 
+    width: 70%;
+}
+
+.column.item-selected {
+    flex: 1; 
+    overflow-y: auto;
+    width: 30%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 630px;
+    overflow-y: auto;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h5 {
+    margin-top: 6px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.product-card p {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+.product-card .price {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-card input[type="number"] {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.product-card input[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px 0;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card input[type="submit"]:hover {
+    background-color: #ffca28;
+}
+
+.card-body table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.card-body th,
+.card-body td {
+    padding: 8px;
+    text-align: center;
+}
+
+.card-body th {
+    background-color: #f8f9fa;
+}
+
+.card-body td img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.card-body .btn {
+    width: 80px;
+    padding: 5px;
+    font-size: 14px;
+}

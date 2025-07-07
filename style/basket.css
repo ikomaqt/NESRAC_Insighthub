@@ -1,0 +1,172 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: "Poppins" , sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  
+}
+
+.container.basket {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    opacity: 97%;
+}
+
+
+h2 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+th {
+    color: black;
+}
+
+tr.cart-item:hover {
+    background-color: #f1f1f1;
+}
+
+.cart.basket img {
+    max-width: 100px;
+    border-radius: 10px;
+
+}
+
+.cart.basket form {
+    display: inline-block;
+    margin: 0;
+}
+
+.cart.basket input[type="number"] {
+    width: 25px;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cart.basket input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+}
+
+.cart.basket input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.next-page-button i {
+    font-size: 30px;
+    color: black;
+}
+
+/* Checkout button */
+.check-out {
+    background-color: #AC1D1D; /* Updated to red */
+    color: #fff; /* Ensure text is white */
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s ease;
+    text-align: center;
+    position: relative; /* This allows you to use right positioning if needed */
+    margin-left: 75%;
+}
+
+.check-out:hover {
+    background-color: #8A1717; /* Slightly darker red for hover state */
+    transform: scale(1.02); /* Subtle scaling effect */
+    color: #fff; /* Ensure text remains white */
+    text-decoration: none; /* No underline on hover */
+}
+
+
+
+tfoot {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.quantity-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Space between buttons and input */
+}
+
+.quantity-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px; /* Increase font size for buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Fixed width to match the image */
+    height: 40px; /* Fixed height to match the image */
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+.quantity-btn:hover {
+    background-color: #0056b3; 
+    transform: scale(1.1); /* Slight scaling on hover */
+}
+
+.quantity-btn:active {
+    transform: scale(0.95); /* Pressed effect */
+}
+
+#quantity {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px; /* Increase font size to match the buttons */
+    height: 40px; /* Match height of buttons */
+}
+
+.quantity-btn:disabled {
+    background-color: #cccccc; /* Grey out the button when disabled */
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .quantity-btn, #quantity {
+        width: 30px; /* Smaller width for mobile */
+        height: 30px; /* Smaller height for mobile */
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+}
+

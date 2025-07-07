@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: "Poppins" , sans-serif;    
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Style for card containers */
+.card {
+    width: 90%;
+    max-width: 1000px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #444;
+}
+
+/* Style for form elements */
+.card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.card input[type="text"],
+.card input[type="number"],
+.card input[type="date"],
+.card select {
+    width: calc(100% - 22px); /* Adjust for padding and border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.card input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.card input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style for tables */
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.card table th,
+.card table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.card table th {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.card table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.card table td {
+    color: #555;
+}

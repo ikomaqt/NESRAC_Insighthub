@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin-left: 160px; /* Adjusted for the sidebar */
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    max-width: calc(100% - 240px);
+    margin-top: 20px;
+    margin-bottom: 20px; /* Add space at the bottom */
+    box-sizing: border-box;
+    transition: margin-left 0.3s ease, max-width 0.3s ease;
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 100px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    margin-bottom: 10px; /* Add space at the bottom */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 1.2em;
+    color: #007bff;
+   
+}
+
+.card p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Date Toggle */
+.date-toggle {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date-toggle label {
+    font-size: 1em;
+    color: #333;
+}
+
+.date-toggle input[type="text"] {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 14px;
+    width: 250px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Chart Container */
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 10px; /* Add space at the bottom */
+}
+
+.chart {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add space at the bottom */
+}
+
+.chart h3 {
+    font-size: 1.2em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Latest Orders Table */
+.latest-orders {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add space at the bottom */
+}
+
+.latest-orders h3 {
+    font-size: 1.2em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.latest-orders table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.latest-orders table th,
+.latest-orders table td {
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    text-align: left;
+    font-size: 14px;
+}
+
+.latest-orders table th {
+    background-color: #f8f9fa;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.latest-orders table tr:nth-child(even) {
+    background-color: #f1f3f5;
+}
+
+.latest-orders table tr:hover {
+    background-color: #e9ecef;
+}
+
+.latest-orders table td {
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;   
+    }
+
+    .chart-container {
+        flex-direction: column;
+    }
+}

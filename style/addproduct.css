@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+/* Header */
+.header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Button Styles */
+.add-product-btn {
+    padding: 12px 20px;
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 8px rgba(108, 99, 255, 0.2);
+    margin-bottom: 20px; /* Add space between button and search/sort */
+    margin-top: 10px;
+}
+
+/* Search and Sort Section */
+.search-sort-container {
+    display: flex;
+    align-items: center; /* Vertically align both elements */
+    gap: 20px; /* Add space between search and sort */
+    width: 100%;
+    flex:;
+}
+
+/* Search Bar */
+.search-bar {
+    padding: 10px;
+    flex-grow: 1; /* Allow search bar to take available space */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-left: 0px;
+}
+
+/* Sort Bar */
+.sort-bar {
+    padding: 10px;
+    width: 150px; /* Fixed width for sort dropdown */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-left: auto; /* Push sort dropdown to the far right */
+}
+
+/* Product Card */
+.product-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+}
+
+/* Table */
+.product-display-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-display-table th, 
+.product-display-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eaeaea;
+    font-size: 15px;
+    text-align: left;
+}
+
+.product-display-table th {
+    font-weight: 600;
+    color: #6c63ff;
+}
+
+.product-display-table td {
+    color: #555;
+}
+
+/* Product Image */
+.product-display-table img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Drag-and-drop image box */
+#drop-area {
+    width: 70%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 150px;
+    background-color: #f4f4f9;
+    border: 2px dashed #6c63ff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+#drop-area p {
+    color: #555;
+    font-size: 14px;
+}
+
+#drop-area img {
+    display: none;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Inputs */
+input {
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f9;
+    font-size: 15px;
+    color: #555;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* SweetAlert Buttons */
+.swal2-styled.swal2-confirm {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.swal2-styled.swal2-cancel {
+    background-color: #ccc;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+/* Edit Button */
+.edit-btn {
+    padding: 8px 16px;
+    background-color: #6c63ff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Button font size */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+    box-shadow: 0 2px 8px rgba(108, 99, 255, 0.2); /* Subtle shadow */
+    margin-right: 10px; /* Space between buttons */
+}
+
+/* Edit Button Hover Effect */
+.edit-btn:hover {
+    background-color: #5b54e6; /* Change background color on hover */
+}
+
